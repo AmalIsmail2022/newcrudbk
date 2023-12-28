@@ -14,7 +14,8 @@ const authRoute = require("./routes/authRoute");
 const app = express();
 app.use(express.json());
 // app.use(express.static(path.join(__dirname, "uploads")));
-app.use(express.static(__dirname + "/public/"));
+// app.use(express.static(__dirname + "/public/"));
+app.use(express.static(path.join(__dirname, "/uploads/")));
 
 const cors = require("cors");
 app.use(cors());
